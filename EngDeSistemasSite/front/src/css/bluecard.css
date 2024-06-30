@@ -1,0 +1,35 @@
+#card {
+
+    background-color: #007bff;
+    color: #fff;
+    padding: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .card-content {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center; 
+  }
+  
+  .card-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }

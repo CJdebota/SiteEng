@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./src/css/carrossel.css">
+        <link rel="stylesheet" href="./src/css/footer.css">
+        <link rel="stylesheet" href="./src/css/header.css">
+        <link rel="stylesheet" href="./src/css/html.css">
+        <link rel="stylesheet" href="./src/css/style.css">
+        <link rel="stylesheet" href="./src/css/bluecard.css">
+        <link rel="stylesheet" href="./src/css/writingtextanimation.css">
+        <link rel="stylesheet" href="./src/css/areas.css">
+        <link rel="stylesheet" href="./src/css/events.css">
+        <link rel="stylesheet" href="./src/css/galeria.css">
+        <link rel="icon" href="src/img/EngSis.png"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <title>Engenharia de Sistemas: O Futuro</title>
+    </head>
+
+    <body>
+        <!--Cabeçalho, na possibilidade de reusar essa pica separei o css e coloquei tudo como classe -->
+        <header>
+            <div class="row">
+                <img id="site-logo" src="./src/img/EngSis.png" alt="Escola de Engenharia">
+                <a class="spacer"></a>
+                <div class ="navigation">
+                    <h1 href="index.html" id="site-title"> Engenharia de Sistemas</h1>
+                    <nav>
+                        <ul id="main-nav">
+                          <li><a href="#sobre">Sobre o Curso</a></li>
+                          <li><a href="#areas">Áreas de Atuação</a></li>
+                          <li><a href="#eventos">Eventos e Notícias</a></li>
+                          <li><a href="#galeria">Galeria</a></li>
+                          <li><a href="#contato">Contato</a></li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+        </header>
+
+        <!--Carrossel das 1:18 da manhã com imagens fudidas -->
+        <section class="carousel">
+            <div class="carousel">
+                <div class="carousel-images">
+                    <div class="carousel-item">
+                        <img src="./src/img/EscolaDeEngenharia.jpg" alt="Imagem 1">
+                        <div class="carousel-caption">
+                            <h2 class="texttyping">Construindo o Futuro, Um Sistema de Cada Vez</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./src/img/EscolaDeEngenharia2.jpg" alt="Imagem 2">
+                        <div class="carousel-caption">
+                            <h2 class="texttyping">Integrando Ideias, Conectando Soluções</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./src/img/carrossel teste.webp" alt="Imagem 3">
+                        <div class="carousel-caption">
+                            <h2 class="texttyping">Engenharia de Sistemas: Inovação Estruturada para um Mundo Interconectado</h2>
+                        </div>
+                    </div>
+                </div>
+            <button class="prev" onclick="changeSlide(-1)">❮</button>
+            <button class="next" onclick="changeSlide(1)">❯</button>
+        </section>
+        <script src="./src/java/carrossel-script.js"></script>
+
+        <!-- nada mudou ainda-->
+        <section class="section">
+            <div class="container">
+              <h2>O que é Engenharia de Sistemas?</h2>
+              <p>
+                A Engenharia de Sistemas é uma área multidisciplinar que integra
+                conhecimentos de computação, matemática, gestão e outras disciplinas
+                para criar soluções inovadoras e eficientes para os desafios do mundo
+                moderno.
+              </p>
+              <p>
+                Nosso curso te prepara para dominar as tecnologias de ponta e
+                desenvolver soluções que impactam positivamente a sociedade.
+              </p>
+            </div>
+          </section>
+
+        <!--Não sei pq ta ai, achei style, to separando os arquivos de css pra ficar mais facil de tu passar pra sua forma de lunatico-->
+        <section id="card">
+            <div class="container">
+                <div class="card-content">
+                    <h3>
+                        Construa o futuro com a Engenharia de Sistemas
+                    </h3>
+                    <p>
+                        Seja um profissional inovador e impactante na área da tecnologia.
+                        Descubra as infinitas possibilidades e abra portas para uma carreira
+                        de sucesso.
+                    </p>
+                    <a href="#sobre" class="btn">Saiba Mais</a>
+                </div>
+            </div>
+        </section>
+    
+
+        <!-- Eu faria uma função em java que retornaria essa layout e aceitaria os parametros necessarios pra n ficar uma parada tão ridicula q em ta, mas sla, vai da sua bondade-->
+        <section id="areas" class="section">
+            <div id="main-board">
+                <h2>Áreas de Atuação</h2>
+                <div class="grid">
+
+                    <div class="item">
+                        <h3>Desenvolvimento de Software</h3>
+                        <img
+                            src="./src/img/ufmg.jpeg"
+                            alt="Ícone de desenvolvimento de software"
+                        />
+                        <p>
+                            Crie aplicativos, softwares e sistemas que transformam a maneira
+                            como as pessoas vivem e trabalham.
+                        </p>
+                    </div>
+                
+                    <div class="item">
+                        <h3>Automação e Robótica</h3>
+                        <img
+                            src="./src/img/ufmg.jpeg"
+                            alt="Ícone de robótica"
+                        />
+                        <p>
+                            Domine a tecnologia que está revolucionando a indústria e aprimore
+                            processos com robôs e sistemas automatizados.
+                        </p>
+                    </div>
+                
+                    <div class="item">
+                        <h3>Redes de Computadores</h3>
+                        <img
+                            src="./src/img/ufmg.jpeg"
+                            alt="Ícone de redes de computadores"
+                        />
+                        <p>
+                            Gerencie e conecte sistemas de forma eficiente, garantindo a
+                            segurança e o bom funcionamento de infraestruturas digitais.
+                        </p>
+                    </div>
+                
+                    <div class="item">
+                        <h3>Inteligência Artificial</h3>
+                        <img
+                            src="./src/img/ufmg.jpeg"
+                            alt="Ícone de inteligência artificial"
+                        />
+                        <p>
+                            Explore o futuro da tecnologia e desenvolva sistemas inteligentes
+                            que aprendem e se adaptam ao longo do tempo.
+                        </p>
+                    </div>
+                
+                    <div class="item">
+                        <h3>Internet das Coisas (IoT)</h3>
+                        <img
+                            src="./src/img/ufmg.jpeg"
+                            alt="Ícone de internet das coisas"
+                        />
+                        <p>
+                            Conecte dispositivos e ambientes físicos à internet, criando soluções
+                            inteligentes para melhorar a qualidade de vida e a eficiência operacional.
+                        </p>
+                    </div>
+                
+                    <div class="item">
+                        <h3>Engenharia de Dados</h3>
+                        <img
+                            src="./src/img/ufmg.jpeg"
+                            alt="Ícone de engenharia de dados"
+                        />
+                        <p>
+                            Colete, armazene e analise grandes volumes de dados para extrair insights
+                            valiosos que impulsionam decisões estratégicas e inovações tecnológicas.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+               
+        </section>
+ 
+        <!--Fiz muito pouco nessas ultimas-->
+        <section id="eventos-container" class="section">
+            <div id="eventos">
+              <h2>Eventos e Notícias</h2>
+              <p>
+                Fique por dentro das últimas novidades, eventos e notícias relevantes
+                do mundo da Engenharia de Sistemas. Acompanhe workshops, palestras,
+                debates e artigos que inspiram e atualizam nossos alunos e
+                profissionais.
+              </p>
+              <a href="#" class="btn">Veja Mais</a>
+            </div>
+          </section>
+      
+          <section id="galeria-container" class="section">
+              <h2>Galeria</h2>
+              <div class="grid">
+                <div class="item">
+                  <img src="imagem-galeria1.jpg" alt="Imagem da Galeria" />
+                </div>
+                <div class="item">
+                  <img src="imagem-galeria2.jpg" alt="Imagem da Galeria" />
+                </div>
+                <div class="item">
+                  <img src="imagem-galeria3.jpg" alt="Imagem da Galeria" />
+                </div>
+                <div class="item">
+                  <img src="imagem-galeria4.jpg" alt="Imagem da Galeria" />
+                </div>
+              </div>
+            </div>
+          </section>
+        <footer class="site-footer">
+            <div class="container">
+              <p>© 2023 Engenharia de Sistemas: O Futuro da Tecnologia</p>
+              <a>Engenharia de Sistemas 2024/1</a>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
